@@ -1,0 +1,38 @@
+<input ng-model="myName" placeholder="Enter your name here">
+<p>Hello {{myName}}</p>
+
+
+<h3> Filters </h3>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <!--Sidebar content-->
+
+        Search: <input ng-model="query">
+     
+      </div>
+      <div class="col-md-10">
+        <!--Body content-->
+
+        <ul class="phones">
+          <li ng-repeat="person in personList | filter:query">   
+             <p>{{person.name}}</p>
+         
+          </li>
+        </ul>
+      </div>
+      
+          
+        
+    <!--  <header ng-repeat-start="person in personList">
+        Header {{ person.name }}
+      </header>
+      <div class="body">
+        Body {{ person.name }}
+      </div>
+      <footer ng-repeat-end>
+        Footer {{ person.name }}
+      </footer>
+  -->
+    </div >
+</div>

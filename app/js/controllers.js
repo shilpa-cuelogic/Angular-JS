@@ -3,9 +3,22 @@
 /* Controllers */
 
 angular.module('myApp.controllers', [])
-  .controller('MyCtrl1', ['$scope', function($scope) {
-
-  }])
-  .controller('MyCtrl2', ['$scope', function($scope) {
-
+  
+  .controller('CtrlHome', ['$scope', function($scope) {
+		  
+	  $scope.personList = [{
+		  id: 1,
+		  name: "Shilpa Deshmukh"	
+	  },
+	  {
+		  id: 2,
+		  name: "Shinee Shah" 		 
+	  },
+	  {
+		  id: 3,
+		  name: "Shreya Shah" 		 
+	  }
+	  ];
+	  
   }]);
+
